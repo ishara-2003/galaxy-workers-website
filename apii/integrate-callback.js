@@ -3,7 +3,8 @@ export default async function handler(req, res) {
         try {
             const { code } = req.query;
            
-            const response = await fetch(`https://graph.facebook.com/v17.0/oauth/access_token?client_id=YOUR_META_APP_ID&client_secret=YOUR_META_APP_SECRET&code=${code}&redirect_uri=${encodeURIComponent('YOUR_REDIRECT_URI')}`);
+            const response = await fetch(`https://graph.facebook.com/v17.0/oauth/access_token?client_id=1282075310376377
+&client_secret=4a3ce4f658d88e408d42443dbd5caa4c&code=${code}&redirect_uri=${encodeURIComponent('YOUR_REDIRECT_URI')}`);
             const data = await response.json();
           
             res.redirect('/?integrated=true');
