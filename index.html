@@ -226,7 +226,7 @@
             }
             try {
                 // Redirect to Meta OAuth flow (replace with your Meta App ID)
-                window.location.href = `https://www.facebook.com/v17.0/dialog/oauth?client_id=YOUR_META_APP_ID&redirect_uri=${encodeURIComponent(window.location.origin + '/api/integrate-callback')}&scope=whatsapp_business_messaging`;
+                window.location.href = `https://www.facebook.com/v17.0/dialog/oauth?client_id=1282075310376377&redirect_uri=${encodeURIComponent(window.location.origin + '/api/integrate-callback')}&scope=whatsapp_business_messaging`;
             } catch (error) {
                 alert('Error initiating WhatsApp integration');
             }
